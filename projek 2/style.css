@@ -1,0 +1,116 @@
+@import url(https://www.youtube.com/redirect?event=comments&redir_token=QUFFLUhqbDNMNEk0dFg0OVBtLXJXMGpHdXdSVVU5Tndpd3xBQ3Jtc0ttR3NNSjVOMDZQRzZuUkRUN1pmNTU1TTFlODV2bmE3YXJrc1hJVDZybFNRS3kzMk9mY0JXWTdSSXJnV3hhWlZlc2tPMHZwU2pIQU9uMUFlMjljNHNVSXROaVlGdlA1c25oek05dXJPYzZEck1VdU04dw&q=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIndie%2BFlower%27%29&stzid=Ugy75a7NBtwqDx185ed4AaABAg);
+@import url(https://www.youtube.com/redirect?event=comments&redir_token=QUFFLUhqa0NZUmtzUTdqTnctU3F4QmFwRXY5akZMUEFXd3xBQ3Jtc0trMFdsVGdHeDhBOEFsejNZQi10dGNsSEQ0TXVTYk5fVl9vZEhVVVJOV1hWcjFpcm1fd3VlOXhpVFVYcEZsUUs1ckxNbGdHRWxYWFB1V2ZObGV1dHhKQkhuRm9TcUNxUjh1UmtJR2prYk1fREZzdVMybw&q=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAmatic%2BSC%27%29&stzid=Ugy75a7NBtwqDx185ed4AaABAg);
+
+body {
+    font-family: 'indie flower', cursive !important;
+    background: #fde3A7;
+    margin: 0;
+    padding: 0px;
+}
+
+::selection {
+    background: transparent;
+}
+
+h4 {
+    font-size: 26px;
+    line-height: 1px;
+    font-family: 'Amatic SC', cursive !important;
+}
+
+.color1 {
+    color: #c03928;
+}
+
+.card {
+    color: #013243;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    background: rgb(227, 227, 149);
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
+    transition: 1s;
+}
+
+.card:hover {
+    transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #bac1ba;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: #92a29c;
+    transform-origin: left;
+    transform: skewY(-45deg);
+}
+
+.card .imgBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    transition: .7s;
+}
+
+.card .bark {
+    position: absolute;
+    background: #e0e1dc;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .7s;
+}
+
+.card .imgBox img {
+    min-width: 250px;
+    max-height: 400px;
+}
+
+.card:hover .imgBox {
+    transform: rotateY(-135deg);
+}
+
+.card:hover .bark {
+    opacity: 1;
+    transition: .6s;
+    box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+}
+
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
+    z-index: -1;
+    margin-top: 70px;
+}
+
+.card .details h4 {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
